@@ -19,6 +19,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--font-family);
 }
 
 a {
@@ -60,7 +61,18 @@ body {
     text-align: left;
     background-color: white;
     width: 30rem;
-    padding: 1.25rem;
-    border-radius: 1rem;
+    object-fit: cover;
+    border-radius: 5%;
     transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.card-container > img {
+    width: 100%;
+    display: block;
+}
+
+.content {
+    margin: 2rem;
+    text-align: center;
 }
