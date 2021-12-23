@@ -12,6 +12,7 @@
     --neutral-desaturated: hsl(224, 23%, 55%);
     --neutral-dark: hsl(223, 47%, 23%);
     --button-purple: hsl(244, 81%, 52%);
+    --button-active: hsl(244.51, 55.19%, 68.43%);
     --font-size-p: 16px;
 }
 
@@ -29,6 +30,7 @@ a {
 
 a:hover {
     text-decoration: none;
+    color: var(--button-active)
 }
 
 body, html {
@@ -73,7 +75,8 @@ p {
     left: 50%;
     text-align: left;
     background-color: white;
-    width: 30rem;
+    width: 26.25rem;
+    height: 40rem;
     object-fit: cover;
     border-radius: 1.25rem;
     transform: translate(-50%, -50%);
@@ -86,7 +89,7 @@ p {
 }
 
 .content {
-    margin-top: 2rem;
+    margin-top: 2.75rem;
     text-align: center;
 }
 
@@ -99,7 +102,7 @@ p {
     display: flex;
     align-items: center;
     margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.75rem;
     margin-left: 2.75rem;
     margin-right: 2.75rem;
     padding: 1.5rem;
@@ -112,12 +115,13 @@ p {
 }
 
 .price {
-    margin-left: 1rem;
-    margin-right: 8.75rem;
+    margin-left: 1.25rem;
+    margin-right: 4.5rem;
 }
 
 .price h4 {
     margin-bottom: 0.25rem;
+    font-weight: var(--font-bold);
 }
 
 .option-container {
@@ -125,10 +129,15 @@ p {
     margin-bottom: 1.5rem;
     margin-left: 2.75rem;
     margin-right: 2.75rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
     border-radius: .75rem;
-    box-shadow: 0 1rem 2.25rem -1rem var(--button-purple);
+    box-shadow: 0 1rem 2.25rem -0.85rem var(--button-purple);
+}
+
+.option-container:hover {
+    background-color: var(--button-active);
+    cursor: pointer;
 }
 
 .option-container h5 {
@@ -140,13 +149,17 @@ p {
     margin-bottom: 1.5rem;
     margin-left: 2.75rem;
     margin-right: 2.75rem;
-    padding-top: 1rem;
     padding-bottom: 1rem;
     border-radius: .75rem;
 }
 
-.cancel-container h5 {
+.cancel-container a {
+    text-decoration: none;
+    font-size: 13.28px;
     color: var(--neutral-desaturated);
-    font-weight: var(--font-bold);
+    font-weight: var(--font-black);
 }
 
+.cancel-container a:hover {
+    color: var(--neutral-dark)
+}
